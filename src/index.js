@@ -8,3 +8,10 @@ import { router } from "./router.js";
 //github token
 //
 
+// render the main component
+ReactDOM.render(
+  <Provider store={store}>
+    {router}
+  </Provider>,
+  document.getElementById('app')
+);
